@@ -34,7 +34,7 @@ gulp.task('html', function() {
 
 //JS Lint Task
 gulp.task('lint', function(){
-    gulp.src('js/new-custom.js')
+    gulp.src('js/*.js')
     .pipe(jshint())
 	.pipe(jshint.reporter('default'))
 	.pipe(connect.reload());
